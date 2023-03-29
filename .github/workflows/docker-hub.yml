@@ -10,7 +10,7 @@ jobs:
       - name: Build
         run: make build-linux
       - name: Publish latest to Registry
-        uses: elgohr/Publish-Docker-Github-Action@13c6c46d98bc92e6c046454248cd28630400846a # pin@master
+        uses: elgohr/Publish-Docker-Github-Action@v5 # pin@master
         with:
           name: linode/linode-blockstorage-csi-driver
           username: ${{ secrets.DOCKER_USERNAME }}
